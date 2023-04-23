@@ -1,0 +1,9 @@
+.fs-4,
+.nav-link {
+    color: #FFFFFF;
+}
+
+.fs-4:hover,
+.nav-link:hover {
+    color: #1baa5c;
+}

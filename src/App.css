@@ -1,0 +1,38 @@
+::placeholder {
+    color: #FFFFFF !important;
+    opacity: 0.5;
+}
+
+.form-control,
+.form-select {
+    color: #FFFFFF;
+    background-color: #383838;
+    border: none;
+}
+
+.form-control:focus,
+.form-select:focus {
+    color: #FFFFFF;
+    background-color: #5f5f5f;
+}
+
+.card {
+    border-color: #5f5f5f;
+}
+
+.card-body {
+    background-color: #383838;
+}
+
+.img-fluid {
+    max-height: 300px;
+}
+
+.link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #1baa5c;
+}
