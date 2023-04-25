@@ -90,8 +90,8 @@ function Inicio() {
             {vazio}
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
                 {
-                    filmes && filmes.map((filme) => (
-                        <Card id={filme.id} capa={filme.poster} titulo={filme.titulo} ano={filme.ano} nota={filme.nota} status={filme.assistido} />
+                    filmes && filmes.map((filme, index) => (
+                        <Card key={index} id={filme.id} capa={filme.poster} titulo={filme.titulo} ano={filme.ano} nota={filme.nota} status={filme.assistido} />
                     ))
                 }
             </div>

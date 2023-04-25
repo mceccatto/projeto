@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Comments from '../Comments/index';
 
 const comentarios = [
@@ -307,8 +307,8 @@ function Detail({ id, capa, titulo, ano, sinopse, status }) {
             </div>
             <div className="row">
                 {
-                    comentariosFilme.registros.map((registro) => (
-                        <Comments usuario={registro.usuario} avatar={registro.avatar} data={registro.data} mensagem={registro.mensagem} />
+                    comentariosFilme && comentariosFilme.registros.map((registro, index) => (
+                        <Comments key={index} usuario={registro.usuario} avatar={registro.avatar} data={registro.data} mensagem={registro.mensagem} />
                     ))
                 }
             </div>
