@@ -21,7 +21,6 @@ function Detalhes() {
                 }
             }).then(response => response.json());
             temp.push(response);
-            console.log(temp);
             setFilme(temp);
             setLoading('');
         }
@@ -34,7 +33,7 @@ function Detalhes() {
             {loading}
             {
                 filme && filme.map((dados) => (
-                    <Detail capa={dados.poster} titulo={dados.titulo} ano={dados.ano} sinopse={dados.sinopse} status={dados.assistido}/>
+                    <Detail id={dados.id} capa={dados.poster} titulo={dados.titulo} ano={dados.ano} sinopse={dados.sinopse} status={dados.assistido}/>
                 ))
             }
         </div>

@@ -1,0 +1,16 @@
+.form-control,
+.form-select {
+    color: #FFFFFF;
+    background-color: #4d4d4d;
+    border: none;
+}
+
+.form-control:focus,
+.form-select:focus {
+    color: #FFFFFF;
+    background-color: #777777;
+}
+
+.card-body {
+    padding-bottom: 0px;
+}

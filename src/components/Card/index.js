@@ -20,7 +20,7 @@ function Card({ id, capa, titulo, ano, nota, status }) {
                         <p className="card-text">Ano: {ano}<br />Nota: {nota}</p>
                         <button type="button" className="btn btn-outline-success mb-2" onClick={() => Assistir()}>{assistido ? 'Assistir Novamente' : 'Assistir'}</button>
                         <br />
-                        <a className="btn btn-outline-secondary" href={`/detalhes/${id}`}>Detalhes</a>
+                        <a className="btn btn-outline-secondary mb-3" href={`/detalhes/${id}`}>Detalhes</a>
                     </div>
                 </div>
             </div>

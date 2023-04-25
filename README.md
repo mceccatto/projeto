@@ -1,3 +1,7 @@
+# Alunos
+Marcelo Ceccatto - RGM 25834851
+Matheus de Carvalho Pereira Pinto - RGM 28077113
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

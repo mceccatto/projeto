@@ -36,3 +36,17 @@
 .link:hover {
     color: #1baa5c;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.custom {
+    width: 80px !important;
+}
