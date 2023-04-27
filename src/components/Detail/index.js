@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './../Button/index';
 import Comments from '../Comments/index';
 
 const comentarios = [
@@ -297,10 +298,11 @@ function Detail({ id, capa, titulo, ano, sinopse, status }) {
                             <h3 className="mb-0">{titulo}</h3>
                             <div className="mb-1 text-body-secondary">{ano}</div>
                             <p className="card-text mb-auto">{sinopse}</p>
+                            <Button status={status} />
                             <a href={'/'} className="link">&#8672; Voltar</a>
                         </div>
                         <div className="col-auto d-none d-lg-block">
-                            <img src={capa}></img>
+                            <img src={capa} alt="img"></img>
                         </div>
                     </div>
                 </div>

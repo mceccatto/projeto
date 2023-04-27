@@ -1,14 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Button from './../Button/index';
 
 function Card({ id, capa, titulo, ano, nota, status }) {
-
-    const [assistido, setAssistido] = useState(status);
-
-    function Assistir() {
-        if (!assistido) {
-            setAssistido(true);
-        }
-    }
 
     return (
         <div className="Card">
@@ -18,7 +11,7 @@ function Card({ id, capa, titulo, ano, nota, status }) {
                         <img src={capa} className="img-fluid" alt="img" height="150px"></img>
                         <h6 className="card-title">{titulo}</h6>
                         <p className="card-text">Ano: {ano}<br />Nota: {nota}</p>
-                        <button type="button" className="btn btn-outline-success mb-2" onClick={() => Assistir()}>{assistido ? 'Assistir Novamente' : 'Assistir'}</button>
+                        <Button status={status} />
                         <br />
                         <a className="btn btn-outline-secondary mb-3" href={`/detalhes/${id}`}>Detalhes</a>
                     </div>
